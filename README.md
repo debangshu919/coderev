@@ -1,5 +1,4 @@
-# CodeRev 🚀
-
+<h1 align="center">CodeRev</h1>
 **CodeRev** is an intelligent, AI-powered code review assistant designed to help developers of all skill levels improve their code. It acts as both a rigorous technical auditor and a friendly mentor, providing deep insights, security checks, and educational explanations.
 
 ![CodeRev Dashboard Mockup](https://github.com/user-attachments/assets/0d40ae11-08e0-4bd6-af26-ed8b7e679447) 
