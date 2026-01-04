@@ -2,8 +2,7 @@
 
 **CodeRev** is an intelligent, AI-powered code review assistant designed to help developers of all skill levels improve their code. It acts as both a rigorous technical auditor and a friendly mentor, providing deep insights, security checks, and educational explanations.
 
-![CodeRev Dashboard Mockup](https://placehold.co/1200x600/1e1e1e/FFF?text=CodeRev+Dashboard+Preview) 
-*(Note: Replace with actual screenshot)*
+![CodeRev Dashboard Mockup](https://github.com/user-attachments/assets/0d40ae11-08e0-4bd6-af26-ed8b7e679447) 
 
 ## ✨ Features
 
@@ -24,7 +23,7 @@
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Components**: [Shadcn UI](https://ui.shadcn.com/)
@@ -68,8 +67,6 @@
 
 5.  Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-## 📸 Screenshots
-
 ### Scoring System
 Visual feedback with color-coded severity:
 - **Green (>80%)**: Great
@@ -85,4 +82,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/debangshu919/coderev/blob/main/LICENSE).
