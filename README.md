@@ -42,7 +42,7 @@ CodeRev is an intelligent, AI-powered code review assistant designed to help dev
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/coderev.git
+    git clone https://github.com/debangshu919/coderev.git
     cd coderev
     ```
 
