@@ -29,6 +29,7 @@ CodeRev is an intelligent, AI-powered code review assistant designed to help dev
 - **Auth**: [Clerk](https://clerk.com/)
 - **AI Model**: [Google Gemini](https://deepmind.google/technologies/gemini/) (using OpenAI Node SDK)
 - **Git Integration**: `simple-git`
+- **Deployed on**: [Vultr](https://www.vultr.com/) 
 
 ## 🚀 Getting Started
 
