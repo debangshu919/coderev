@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CodeRev 🚀
 
-## Getting Started
+**CodeRev** is an intelligent, AI-powered code review assistant designed to help developers of all skill levels improve their code. It acts as both a rigorous technical auditor and a friendly mentor, providing deep insights, security checks, and educational explanations.
 
-First, run the development server:
+![CodeRev Dashboard Mockup](https://placehold.co/1200x600/1e1e1e/FFF?text=CodeRev+Dashboard+Preview) 
+*(Note: Replace with actual screenshot)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **🤖 AI-Powered Analysis**: Powered by Google's **Gemini 2.5 Flash** (via OpenAI SDK) for lightning-fast and accurate code evaluations.
+- **📊 Comprehensive Scoring System**: Instantly grade your code on four critical dimensions:
+  - **Bug Risk**: Identifies logical errors and stability issues.
+  - **Security**: Detects hardcoded secrets, injection vulnerabilities, and unsafe patterns.
+  - **Code Quality**: Evaluates readability, DRY principles, and naming conventions.
+  - **Maintainability**: Checks for modularity and structural organization.
+- **🌗 Dual Explanation Modes**:
+  - **Beginner Mode**: Friendly, analogy-based explanations (e.g., explaining API security like "house keys").
+  - **Expert Mode**: Precise, technical feedback for experienced engineers.
+- **📂 Flexible Input**:
+  - **Paste Code**: Direct analysis of snippets.
+  - **GitHub Repos**: Clone and review the latest commit of any public repository automatically.
+- **🔒 Secure**: Fully integrated authentication via **Clerk**.
+- **🎨 Modern UI**: Built with **Next.js**, **Tailwind CSS**, and **Shadcn UI** for a premium, responsive experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Components**: [Shadcn UI](https://ui.shadcn.com/)
+- **Auth**: [Clerk](https://clerk.com/)
+- **AI Model**: [Google Gemini](https://deepmind.google/technologies/gemini/) (using OpenAI Node SDK)
+- **Git Integration**: `simple-git`
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js 18+
+- A Google Cloud API Key (for Gemini)
+- A Clerk Publishable Key & Secret Key
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/coderev.git
+    cd coderev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Set up environment variables**:
+    Create a `.env.local` file in the root directory:
+    ```env
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+    CLERK_SECRET_KEY=sk_test_...
+    GEMINI_API_KEY=your_google_gemini_key
+    ```
+
+4.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## 📸 Screenshots
+
+### Scoring System
+Visual feedback with color-coded severity:
+- **Green (>80%)**: Great
+- **Yellow (30-80%)**: Needs Attention
+- **Red (<30%)**: Critical / High Risk
+
+### Beginner vs Expert Mode
+Toggle between "Simple Explanations" and "Technical Details" instantly.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
